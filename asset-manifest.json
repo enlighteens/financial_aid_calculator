@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/financial_aid_calculator/static/css/main.da4fd9d8.css",
+    "main.js": "/financial_aid_calculator/static/js/main.c06b439f.js",
+    "static/js/453.9055b46e.chunk.js": "/financial_aid_calculator/static/js/453.9055b46e.chunk.js",
+    "index.html": "/financial_aid_calculator/index.html",
+    "main.da4fd9d8.css.map": "/financial_aid_calculator/static/css/main.da4fd9d8.css.map",
+    "main.c06b439f.js.map": "/financial_aid_calculator/static/js/main.c06b439f.js.map",
+    "453.9055b46e.chunk.js.map": "/financial_aid_calculator/static/js/453.9055b46e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da4fd9d8.css",
+    "static/js/main.c06b439f.js"
+  ]
+}
