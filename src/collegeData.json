@@ -1,0 +1,572 @@
+{
+  "Princeton": {
+    "tuitionAndCosts": 62400,
+    "incomeBrackets": {
+      "<30k": 2841,
+      "30k-48k": 2370,
+      "48k-75k": 6943,
+      "75k-110k": 13557,
+      ">110k": 36082
+    },
+    "state": "NJ"
+  },
+  "MIT": {
+    "tuitionAndCosts": 62396,
+    "incomeBrackets": {
+      "<30k": 5347,
+      "30k-48k": -2251,
+      "48k-75k": 1918,
+      "75k-110k": 13035,
+      ">110k": 44726
+    },
+    "state": "MA"
+  },
+  "Harvard": {
+    "tuitionAndCosts": 61676,
+    "incomeBrackets": {
+      "<30k": 5900,
+      "30k-48k": 3002,
+      "48k-75k": 4180,
+      "75k-110k": 17037,
+      ">110k": 52634
+    },
+    "state": "MA"
+  },
+  "Stanford": {
+    "tuitionAndCosts": 65910,
+    "incomeBrackets": {
+      "<30k": -1386,
+      "30k-48k": -1876,
+      "48k-75k": 3637,
+      "75k-110k": 7332,
+      ">110k": 45276
+    },
+    "state": "CA"
+  },
+  "Yale": {
+    "tuitionAndCosts": 67250,
+    "incomeBrackets": {
+      "<30k": 341,
+      "30k-48k": 1751,
+      "48k-75k": 5283,
+      "75k-110k": 14152,
+      ">110k": 45628
+    },
+    "state": "CT"
+  },
+  "Caltech": {
+    "tuitionAndCosts": 65898,
+    "incomeBrackets": {
+      "<30k": -1012,
+      "30k-48k": 1721,
+      "48k-75k": 4367,
+      "75k-110k": 14886,
+      ">110k": 48070
+    },
+    "state": "CA"
+  },
+  "Duke": {
+    "tuitionAndCosts": 69140,
+    "incomeBrackets": {
+      "<30k": 3931,
+      "30k-48k": 2025,
+      "48k-75k": 10076,
+      "75k-110k": 17506,
+      ">110k": 49945
+    },
+    "state": "NC"
+  },
+  "Johns Hopkins": {
+    "tuitionAndCosts": 65230,
+    "incomeBrackets": {
+      "<30k": 156,
+      "30k-48k": 4342,
+      "48k-75k": 6419,
+      "75k-110k": 12838,
+      ">110k": 39451
+    },
+    "state": "MD"
+  },
+  "Northwestern": {
+    "tuitionAndCosts": 68322,
+    "incomeBrackets": {
+      "<30k": 3393,
+      "30k-48k": 2389,
+      "48k-75k": 6079,
+      "75k-110k": 19672,
+      ">110k": 48102
+    },
+    "state": "IL"
+  },
+  "UPenn": {
+    "tuitionAndCosts": 68686,
+    "incomeBrackets": {
+      "<30k": 344,
+      "30k-48k": 4611,
+      "48k-75k": 11544,
+      "75k-110k": 22549,
+      ">110k": 48881
+    },
+    "state": "PA"
+  },
+  "Cornell": {
+    "tuitionAndCosts": 69314,
+    "incomeBrackets": {
+      "<30k": 4375,
+      "30k-48k": 5017,
+      "48k-75k": 8006,
+      "75k-110k": 20728,
+      ">110k": 48783
+    },
+    "state": "NY"
+  },
+  "UChicago": {
+    "tuitionAndCosts": 69324,
+    "incomeBrackets": {
+      "<30k": 958,
+      "30k-48k": 1595,
+      "48k-75k": 3596,
+      "75k-110k": 13531,
+      ">110k": 47835
+    },
+    "state": "IL"
+  },
+  "Brown": {
+    "tuitionAndCosts": 71312,
+    "incomeBrackets": {
+      "<30k": 4741,
+      "30k-48k": 1199,
+      "48k-75k": 8394,
+      "75k-110k": 20163,
+      ">110k": 46032
+    },
+    "state": "RI"
+  },
+  "Columbia": {
+    "tuitionAndCosts": 69045,
+    "incomeBrackets": {
+      "<30k": 6184,
+      "30k-48k": 4569,
+      "48k-75k": 8385,
+      "75k-110k": 15114,
+      ">110k": 45873
+    },
+    "state": "NY"
+  },
+  "Dartmouth": {
+    "tuitionAndCosts": 68019,
+    "incomeBrackets": {
+      "<30k": 2438,
+      "30k-48k": 4073,
+      "48k-75k": 5903,
+      "75k-110k": 17440,
+      ">110k": 55770
+    },
+    "state": "NH"
+  },
+  "UC LA": {
+    "tuitionAndCosts": 46503,
+    "inStateTuition": 14208,
+    "incomeBrackets": {
+      "<30k": 8849,
+      "30k-48k": 10440,
+      "48k-75k": 13335,
+      "75k-110k": 19395,
+      ">110k": 30301
+    },
+    "state": "CA"
+  },
+  "UC Berkeley": {
+    "tuitionAndCosts": 51032,
+    "inStateTuition": 16832,
+    "incomeBrackets": {
+      "<30k": 9236,
+      "30k-48k": 10294,
+      "48k-75k": 14213,
+      "75k-110k": 22151,
+      ">110k": 36217
+    },
+    "state": "CA"
+  },
+  "RICE": {
+    "tuitionAndCosts": 60709,
+    "incomeBrackets": {
+      "<30k": 5292,
+      "30k-48k": 4126,
+      "48k-75k": 6905,
+      "75k-110k": 13245,
+      ">110k": 43636
+    },
+    "state": "TX"
+  },
+  "Notre Dame": {
+    "tuitionAndCosts": 65025,
+    "incomeBrackets": {
+      "<30k": 9201,
+      "30k-48k": 7659,
+      "48k-75k": 14445,
+      "75k-110k": 25532,
+      ">110k": 48006
+    },
+    "state": "IN"
+  },
+  "Vanderbilt": {
+    "tuitionAndCosts": 67498,
+    "incomeBrackets": {
+      "<30k": 7451,
+      "30k-48k": 4475,
+      "48k-75k": 8892,
+      "75k-110k": 16934,
+      ">110k": 43288
+    },
+    "state": "TN"
+  },
+  "Carnegie Mellon": {
+    "tuitionAndCosts": 65636,
+    "incomeBrackets": {
+      "<30k": 12082,
+      "30k-48k": 15139,
+      "48k-75k": 16532,
+      "75k-110k": 24893,
+      ">110k": 52012
+    },
+    "state": "PA"
+  },
+  "U of Michigan--Ann Arbor": {
+    "tuitionAndCosts": 63081,
+    "inStateTuition": 18848,
+    "incomeBrackets": {
+      "<30k": 5713,
+      "30k-48k": 7376,
+      "48k-75k": 11621,
+      "75k-110k": 17865,
+      ">110k": 27711
+    },
+    "state": "MI"
+  },
+  "Washington U in St. Louis": {
+    "tuitionAndCosts": 65790,
+    "incomeBrackets": {
+      "<30k": 194,
+      "30k-48k": -1702,
+      "48k-75k": 3869,
+      "75k-110k": 18405,
+      ">110k": 45503
+    },
+    "state": "MO"
+  },
+  "Emory": {
+    "tuitionAndCosts": 64280,
+    "incomeBrackets": {
+      "<30k": 7058,
+      "30k-48k": 5506,
+      "48k-75k": 12464,
+      "75k-110k": 23933,
+      ">110k": 48971
+    },
+    "state": "GA"
+  },
+  "Georgetown": {
+    "tuitionAndCosts": 68016,
+    "incomeBrackets": {
+      "<30k": 5070,
+      "30k-48k": 3558,
+      "48k-75k": 11409,
+      "75k-110k": 21955,
+      ">110k": 51119
+    },
+    "state": "DC"
+  },
+  "U of Virginia": {
+    "tuitionAndCosts": 60907,
+    "inStateTuition": 23118,
+    "incomeBrackets": {
+      "<30k": 11273,
+      "30k-48k": 12720,
+      "48k-75k": 14884,
+      "75k-110k": 23840,
+      ">110k": 32829
+    },
+    "state": "VA"
+  },
+  "U of North Carolina--Chapel Hill": {
+    "tuitionAndCosts": 41211,
+    "inStateTuition": 9003,
+    "incomeBrackets": {
+      "<30k": 3296,
+      "30k-48k": 5441,
+      "48k-75k": 11306,
+      "75k-110k": 18991,
+      ">110k": 23695
+    },
+    "state": "NC"
+  },
+  "U of Southern California": {
+    "tuitionAndCosts": 71647,
+    "incomeBrackets": {
+      "<30k": 12880,
+      "30k-48k": 14852,
+      "48k-75k": 19991,
+      "75k-110k": 26959,
+      ">110k": 52817
+    },
+    "state": "CA"
+  },
+  "UC San Diego": {
+    "tuitionAndCosts": 51015,
+    "inStateTuition": 16815,
+    "incomeBrackets": {
+      "<30k": 9055,
+      "30k-48k": 10263,
+      "48k-75k": 13639,
+      "75k-110k": 20297,
+      ">110k": 30300
+    },
+    "state": "CA"
+  },
+  "NYU": {
+    "tuitionAndCosts": 62796,
+    "incomeBrackets": {
+      "<30k": 15298,
+      "30k-48k": 11334,
+      "48k-75k": 16039,
+      "75k-110k": 36323,
+      ">110k": 58906
+    },
+    "state": "NY"
+  },
+  "U of Florida": {
+    "tuitionAndCosts": 28658,
+    "inStateTuition": 6381,
+    "incomeBrackets": {
+      "<30k": 2033,
+      "30k-48k": 3599,
+      "48k-75k": 8897,
+      "75k-110k": 14440,
+      ">110k": 15203
+    },
+    "state": "FL"
+  },
+  "UT Austin": {
+    "tuitionAndCosts": 42778,
+    "inStateTuition": 11678,
+    "incomeBrackets": {
+      "<30k": 12157,
+      "30k-48k": 14135,
+      "48k-75k": 17258,
+      "75k-110k": 25597,
+      ">110k": 28408
+    },
+    "state": "TX"
+  },
+  "Georgia Institute of Technology": {
+    "tuitionAndCosts": 34484,
+    "inStateTuition": 12058,
+    "incomeBrackets": {
+      "<30k": 8570,
+      "30k-48k": 11178,
+      "48k-75k": 14771,
+      "75k-110k": 18051,
+      ">110k": 18807
+    },
+    "state": "GA"
+  },
+  "UC Davis": {
+    "tuitionAndCosts": 47682,
+    "inStateTuition": 15794,
+    "incomeBrackets": {
+      "<30k": 9089,
+      "30k-48k": 10258,
+      "48k-75k": 13232,
+      "75k-110k": 18376,
+      ">110k": 31575
+    },
+    "state": "CA"
+  },
+  "UC Irvine": {
+    "tuitionAndCosts": 46646,
+    "inStateTuition": 14737,
+    "incomeBrackets": {
+      "<30k": 7621,
+      "30k-48k": 8139,
+      "48k-75k": 11095,
+      "75k-110k": 17614,
+      ">110k": 29565
+    },
+    "state": "CA"
+  },
+  "U of Illinois Urbana-Champaign": {
+    "tuitionAndCosts": 36760,
+    "inStateTuition": 17640,
+    "incomeBrackets": {
+      "<30k": 3881,
+      "30k-48k": 8562,
+      "48k-75k": 11920,
+      "75k-110k": 22833,
+      ">110k": 28710
+    },
+    "state": "IL"
+  },
+  "Boston College": {
+    "tuitionAndCosts": 70702,
+    "incomeBrackets": {
+      "<30k": 10988,
+      "30k-48k": 7260,
+      "48k-75k": 15264,
+      "75k-110k": 24041,
+      ">110k": 55461
+    },
+    "state": "MA"
+  },
+  "Tufts University": {
+    "tuitionAndCosts": 70704,
+    "incomeBrackets": {
+      "<30k": 9223,
+      "30k-48k": 6812,
+      "48k-75k": 14765,
+      "75k-110k": 26144,
+      ">110k": 57478
+    },
+    "state": "MA"
+  },
+  "UC Santa Barbara": {
+    "tuitionAndCosts": 47755,
+    "inStateTuition": 15460,
+    "incomeBrackets": {
+      "<30k": 8839,
+      "30k-48k": 10859,
+      "48k-75k": 13464,
+      "75k-110k": 18987,
+      ">110k": 31659
+    },
+    "state": "CA"
+  },
+  "U of Wisconsin--Madison": {
+    "tuitionAndCosts": 42103,
+    "inStateTuition": 11603,
+    "incomeBrackets": {
+      "<30k": 3964,
+      "30k-48k": 4687,
+      "48k-75k": 9152,
+      "75k-110k": 21842,
+      ">110k": 25866
+    },
+    "state": "WI"
+  },
+  "Boston University": {
+    "tuitionAndCosts": 68102,
+    "incomeBrackets": {
+      "<30k": 10164,
+      "30k-48k": 9536,
+      "48k-75k": 14838,
+      "75k-110k": 24109,
+      ">110k": 48841
+    },
+    "state": "MA"
+  },
+  "Rutgers University -- New Brunswick": {
+    "tuitionAndCosts": 37441,
+    "inStateTuition": 17929,
+    "incomeBrackets": {
+      "<30k": 14026,
+      "30k-48k": 14893,
+      "48k-75k": 19950,
+      "75k-110k": 27099,
+      ">110k": 30640
+    },
+    "state": "NJ"
+  },
+  "The Ohio State University": {
+    "tuitionAndCosts": 40022,
+    "inStateTuition": 13244,
+    "incomeBrackets": {
+      "<30k": 6956,
+      "30k-48k": 8402,
+      "48k-75k": 13620,
+      "75k-110k": 22528,
+      ">110k": 26186
+    },
+    "state": "OH"
+  },
+  "University of Maryland, College Park": {
+    "tuitionAndCosts": 41186,
+    "inStateTuition": 111808,
+    "incomeBrackets": {
+      "<30k": 3907,
+      "30k-48k": 10123,
+      "48k-75k": 14312,
+      "75k-110k": 21675,
+      ">110k": 25866
+    },
+    "state": "MD"
+  },
+  "University of Rochester": {
+    "tuitionAndCosts": 67124,
+    "incomeBrackets": {
+      "<30k": 12169,
+      "30k-48k": 15724,
+      "48k-75k": 21593,
+      "75k-110k": 30873,
+      ">110k": 46720
+    },
+    "state": "NY"
+  },
+  "Lehigh University": {
+    "tuitionAndCosts": 64980,
+    "incomeBrackets": {
+      "<30k": 14841,
+      "30k-48k": 14831,
+      "48k-75k": 18967,
+      "75k-110k": 28294,
+      ">110k": 48774
+    },
+    "state": "PA"
+  },
+  "Wake Forest University": {
+    "tuitionAndCosts": 67642,
+    "incomeBrackets": {
+      "<30k": 12795,
+      "30k-48k": 7203,
+      "48k-75k": 10344,
+      "75k-110k": 18728,
+      ">110k": 57539
+    },
+    "state": "NC"
+  },
+  "Case Western Reserve University": {
+    "tuitionAndCosts": 66605,
+    "incomeBrackets": {
+      "<30k": 16010,
+      "30k-48k": 17541,
+      "48k-75k": 22653,
+      "75k-110k": 32824,
+      ">110k": 47824
+    },
+    "state": "OH"
+  },
+  "William & Mary": {
+    "tuitionAndCosts": 50752,
+    "inStateTuition": 26019,
+    "incomeBrackets": {
+      "<30k": 2580,
+      "30k-48k": 4577,
+      "48k-75k": 8405,
+      "75k-110k": 19584,
+      ">110k": 35267
+    },
+    "state": "VA"
+  },
+  "University of California, Merced": {
+    "tuitionAndCosts": 46905,
+    "inStateTuition": 14610,
+    "incomeBrackets": {
+      "<30k": 9244,
+      "30k-48k": 10126,
+      "48k-75k": 13347,
+      "75k-110k": 20035,
+      ">110k": 32273
+    },
+    "state": "CA"
+  }
+}
+
