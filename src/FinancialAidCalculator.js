@@ -16,7 +16,9 @@ const setCookie = (name, value, days = 365) => {
     document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
 };
 
-const EMAIL_CAPTURE_ENDPOINT = process.env.REACT_APP_EMAIL_CAPTURE_ENDPOINT;
+const EMAIL_CAPTURE_ENDPOINT =
+    process.env.REACT_APP_EMAIL_CAPTURE_ENDPOINT ||
+    'https://obmx70jcug.execute-api.us-east-1.amazonaws.com/prod/email-capture';
 
 const recordEmailLocally = (email) => {
     if (typeof window === 'undefined') return;
