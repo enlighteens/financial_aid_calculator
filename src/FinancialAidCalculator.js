@@ -123,6 +123,10 @@ const getAxisPosition = (value, markers) => {
     return { lower: lastIndex, upper: lastIndex, weight: 0 };
 };
 
+const clampValue = (value, min, max) => Math.min(Math.max(value, min), max);
+const formatNumberInput = (value) => (Number.isFinite(value) ? value.toLocaleString('en-US') : '');
+const parseNumberInput = (value) => Number(String(value).replace(/,/g, ''));
+
 const lerp = (a, b, t) => {
     if (a == null && b == null) return null;
     if (a == null) return b;
@@ -158,6 +162,12 @@ const interpolateAidAmount = (matrix, axes) => {
 
 function FinancialAidCalculator() {
     const [inputs, setInputs] = useState(defaultInputs);
+    const [inputValues, setInputValues] = useState(() =>
+        sliderConfig.reduce((acc, config) => {
+            acc[config.key] = formatNumberInput(defaultInputs[config.key]);
+            return acc;
+        }, {}),
+    );
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [emailInput, setEmailInput] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -166,6 +176,23 @@ function FinancialAidCalculator() {
     const handleChange = (key) => (event) => {
         const nextValue = Number(event.target.value);
         setInputs((prev) => ({ ...prev, [key]: nextValue }));
+        setInputValues((prev) => ({ ...prev, [key]: formatNumberInput(nextValue) }));
+    };
+
+    const handleInputChange = (key) => (event) => {
+        const { value } = event.target;
+        setInputValues((prev) => ({ ...prev, [key]: value }));
+    };
+
+    const handleInputBlur = (config) => () => {
+        const rawValue = parseNumberInput(inputValues[config.key]);
+        if (Number.isNaN(rawValue)) {
+            setInputValues((prev) => ({ ...prev, [config.key]: formatNumberInput(inputs[config.key]) }));
+            return;
+        }
+        const clampedValue = clampValue(rawValue, config.min, config.max);
+        setInputs((prev) => ({ ...prev, [config.key]: clampedValue }));
+        setInputValues((prev) => ({ ...prev, [config.key]: formatNumberInput(clampedValue) }));
     };
 
     const handleCtaClick = () => {
@@ -200,11 +227,16 @@ function FinancialAidCalculator() {
             cash: getAxisPosition(inputs.cash, aidLookup.breakpoints.cash),
             investments: getAxisPosition(inputs.investments, aidLookup.breakpoints.investments),
         };
+        // Surface the current placement within each axis for quick debugging.
+        // eslint-disable-next-line no-console
+        console.log('Axis positions', axisPositions);
 
         return aidLookup.schools
             .map((school) => {
                 const matrix = aidLookup.matrices?.[school];
                 const aidAmount = interpolateAidAmount(matrix, axisPositions);
+                // eslint-disable-next-line no-console
+                console.log(`Aid value for ${school}:`, aidAmount);
 
                 if (aidAmount == null) {
                     return null;
@@ -229,20 +261,51 @@ function FinancialAidCalculator() {
                     <h2 className="options-title">Options</h2>
                     {sliderConfig.map((config) => (
                         <div className="option-card" key={config.key}>
-                            <div className="option-label">{config.label}</div>
-                            <input
-                                type="range"
-                                min={config.min}
-                                max={config.max}
-                                step={config.step}
-                                value={inputs[config.key]}
-                                onChange={handleChange(config.key)}
-                                className="option-slider"
-                            />
-                            <div className="slider-markers">
-                                {config.markers.map((marker) => (
-                                    <span key={marker}>{formatMarker(marker)}</span>
-                                ))}
+                            <div className="option-label-text">{config.label}</div>
+                            <div className="option-input-row">
+                                <span className="currency-prefix">$</span>
+                                <input
+                                    type="text"
+                                    inputMode="numeric"
+                                    pattern="[0-9]*"
+                                    min={config.min}
+                                    max={config.max}
+                                    step={config.step}
+                                    value={inputValues[config.key]}
+                                    onChange={handleInputChange(config.key)}
+                                    onBlur={handleInputBlur(config)}
+                                    className="option-number-input"
+                                />
+                            </div>
+                            <div className="slider-stack">
+                                <div className="slider-track">
+                                    <input
+                                        type="range"
+                                        min={config.min}
+                                        max={config.max}
+                                        step={config.step}
+                                        value={inputs[config.key]}
+                                        onChange={handleChange(config.key)}
+                                        className="option-slider"
+                                    />
+                                    <div className="slider-markers">
+                                        {config.markers.map((marker) => {
+                                            const ratio =
+                                                (marker - config.min) / (config.max - config.min || 1);
+                                            const position = Math.min(Math.max(ratio * 100, 0), 100);
+                                            const boundedPosition = Math.min(Math.max(position, 5), 95);
+                                            return (
+                                                <span
+                                                    key={marker}
+                                                    className="slider-marker"
+                                                    style={{ left: `${boundedPosition}%` }}
+                                                >
+                                                    {formatMarker(marker)}
+                                                </span>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))}
